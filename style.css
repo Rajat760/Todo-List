@@ -12,6 +12,8 @@ body {
 
 }
 
+
+
 header {
     font-size: 2rem;
     text-align: center;
@@ -42,7 +44,7 @@ form button {
 }
 
 form button:hover {
-background: #d88771;
+background: #ff6f47;
 color: white;
 }
 
@@ -71,6 +73,7 @@ color: white;
 
 .todo li {
     flex: 1;
+    text-align: center;
 }
 
 .trash-btn,
@@ -146,8 +149,151 @@ select {
   }
   /* Transition */
   
-  .select:hover::after {
+  /* .select:hover::after {
     background: white;
     color: #ff6f47;
+  } */
+
+  @media(max-width: 1050px) {
+
+      .todo-container {
+        position: relative;
+        left: -51px;
+        height: 23rem;
+      }
+    form {
+        flex-direction: column;
+    }
+    .todo-button{
+        position: relative;
+        top: -65px;
+        left: 289px;
+        padding: 0.9rem;
+    
+    }
+
+    select {
+        margin-bottom: 50px;
+        width: 25rem;
+        position: relative;
+        top: 1px;
+       
+    }
+    .todo-input {
+        position: relative;
+        left: -34px;
+        height: 4rem;
+        width: 36rem;
+    }
+    .todo {
+        height: 4rem;
+    }
+    .complete-btn,
+    .trash-btn {
+        height: 4rem;
+        position: relative;
+        left: 97px;
+    }
+
+    .select::after {
+        padding: 0.9rem;
+        position: relative;
+      
+    }
+    
   }
+
+
+
+  @media(max-width: 800px) {
+    form {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .todo-button{
+        position: relative;
+        top: -65px;
+        left: 194px;
+    }
+
+    select {
+        margin-bottom: 50px;
+        width: 25rem;
+        position: relative;
+        top: 1px;
+    }
+    .todo-input {
+        position: relative;
+        left: -34px;
+        width: 24rem;
+    }
+}
+  
+
+
+
+  @media(max-width: 500px) {
+form {
+    margin-top: 43px;
+    flex-direction: column;
+}
+.todo-input {
+    left: -34px;
+    width: 17rem;
+}
+.todo-button {
+    top: -64px;
+    left: 134px;
+}
+select {
+    width: 17rem;
+}
+.todo-container {
+width: 15rem;
+width: 19rem;
+left: 1px;
+  }
+  .todo li {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+}
+.todo {
+   text-align: center;
+  height: auto;
+}
+.todo-list {
+    min-width: 90%;
+    position: relative;
+    left: -17px;
+    max-width: 11rem;
+}
+.todo-item {
+    padding: 0;
+}
+.trash-btn, .complete-btn {
+    left: 90px;
+    position: relative;
+}
+.select {
+    height: 3rem;
+}
+}
  
+  @media(max-width: 320px) {
+   
+select {
+    width: 12rem;
+
+}
+.todo-input {
+    left: 6px;
+}
+.todo-button {
+    left: 178px;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+}
+  } 
