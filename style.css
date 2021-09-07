@@ -202,6 +202,9 @@ select {
         position: relative;
       
     }
+    .todo-list {
+        left: -10px;
+    }
     
   }
 
@@ -231,6 +234,9 @@ select {
         position: relative;
         left: -34px;
         width: 24rem;
+    }
+    .todo-list {
+        left: 8px;
     }
 }
   
@@ -273,7 +279,7 @@ left: 1px;
 .todo-list {
     min-width: 90%;
     position: relative;
-    left: -17px;
+    left: 8px;
     max-width: 11rem;
 }
 .todo-item {
@@ -305,5 +311,8 @@ select {
 h1 {
     width: 100%;
     text-align: center;
+}
+.todo-list {
+    left: -16px;
 }
   } 
