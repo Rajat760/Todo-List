@@ -155,7 +155,9 @@ select {
   } */
 
   @media(max-width: 1050px) {
-
+    .select::after {
+        display: none;
+    }
       .todo-container {
         position: relative;
         left: -51px;
@@ -206,6 +208,9 @@ select {
 
 
   @media(max-width: 800px) {
+    .select::after {
+        display: none;
+    }
     form {
         flex-direction: column;
         margin-top: 30px;
@@ -233,6 +238,9 @@ select {
 
 
   @media(max-width: 500px) {
+    .select::after {
+        display: none;
+    }
 form {
     margin-top: 43px;
     flex-direction: column;
@@ -281,7 +289,9 @@ left: 1px;
 }
  
   @media(max-width: 320px) {
-   
+    .select::after {
+        display: none;
+    }
 select {
     width: 12rem;
 
